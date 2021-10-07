@@ -1,0 +1,19 @@
+body {
+    font-family: sans-serif;
+}
+
+div {
+    vertical-align: middle;
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+table,td{
+    border:1px solid black;
+}
+

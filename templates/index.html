@@ -5,5 +5,24 @@
 {% endblock %}
 
 {% block body %}
-    <h1>Hello World</h1>
+<div class="main">
+    <h1 style="text-align: center">Simple Flask App</h1>
+    <p>Enter 2 numbers and the sum of the two numbers will be displayed below!</p>
+
+    
+        <table>
+            <tr>
+                <td><input type="number" name="num1" required></td>
+                <td><input type="number" name="num2" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="add()">Get sum</button></td>
+            </tr>
+            <tr>
+                <td>Sum: </td>
+                <td><input type="text" name="sum" readonly></td>
+            </tr>
+        </table>
+</div>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
 {% endblock %}
